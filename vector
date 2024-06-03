@@ -1,0 +1,7 @@
+class Solution {
+public:
+    vector<vector<int>> permute(vector<int>& num) {
+        if (num.empty()) return vector<vector<int>>(1, vector<int>());
+        vector<vector<int>> res;
+        int first = num[0];
+        num.erase(num.begin());
